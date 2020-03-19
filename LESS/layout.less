@@ -1,34 +1,105 @@
-h1 {
-    .bold;
-    color: @red;
+.mobile-nav {
+    @media only screen and (min-width: 701px) {
+        display: none;
+        // make nav bar sticky
+    }
+    .open {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        padding: .75rem .8rem;
+    }
+    .mobile-nav-div {
+        width: 0;
+        overflow-x: hidden;
+        
+        z-index: 1;
+        position: fixed;
+        background-color: @light-gray;
+        display: block;
+        .light;
+        text-align: center;
+        .mobile-nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .close {
+                font-size: 3rem;
+                padding: 0;
+                margin-left: 1rem;
+                margin-top: .25rem;
+            }
+            .mobile-nav-logo {
+                width: 150px;
+                padding: 0;
+            }
+            .mobile-nav-icons {
+                display: flex;
+                padding-right: 1rem;
+                a {
+                    padding: .25rem;
+                }
+            }
+        }
+        .nav-search {
+            width: 100%;
+            select {
+                background-color: white;
+                height: 3rem;
+                border-radius: 0;
+            }
+            input {
+                width: 80%;
+                height: 3rem;
+            }
+        }
+        a {
+            clear: left;
+            color: black;
+            font-size: 1rem;
+            display: block;
+            text-decoration: none;
+            padding: 1rem;        
+        }
+        hr {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    }
 }
 
-.nav {
+.desktop-nav {
+    @media only screen and (max-width: 700px) {
+        display: none;
+    }
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
-    .nav-logo {
-        width: 200px;
-        img {
-            width: 100%;
+    .left {
+        display: flex;
+        .nav-logo {
+            width: 200px;
+            padding-right: 1rem;
+            img {
+                width: 100%;
+            }
         }
-    }
-    .first-nav {
-        ul {
-            display: flex;
-            
-            li {
-                padding: 0 1rem;
+        .first-nav {
+            a {
+                color: black;
+                text-decoration: none;
+                padding: 1rem;
             }
         }
     }
     .second-nav {
-        ul {
-            display: flex;
-            
-            li {
-                padding: 0 1rem;
-            }
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 1rem;
         }
     }
 }

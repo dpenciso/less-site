@@ -1,0 +1,20 @@
+.extra-bold {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.bold {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.regular {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.light {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}

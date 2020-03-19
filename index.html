@@ -6,27 +6,57 @@
 	<title>Cozy Corner</title>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="https://use.typekit.net/lzy6lwz.css">
+	<script src="https://kit.fontawesome.com/82e4275e9f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<div class="nav">
-		<div class="nav-logo">
-			<img src="images/cozy-corner-logo.png" alt="cozy corner logo">
+	<nav>
+		<div class="mobile-nav">
+			<div class="mobile-nav-div" id="nav">
+				<div class="mobile-nav-header">
+					<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+					<a href="#" class="mobile-nav-logo-a"><img class="mobile-nav-logo" src="images/cozy-corner-logo.png" alt=""></a>
+					<div class="mobile-nav-icons">
+						<a href="#"><i class="far fa-bell"></i></a>
+						<a href="#"><i class="far fa-user"></i></a>
+					</div>
+				</div>
+				<div class="nav-search">
+					<select name="search" id="search">
+						<option value="">All</option>
+						<option value="">Games</option>
+						<option value="">News</option>
+						<option value="">Store</option>
+					</select>
+					<input type="text" placeholder="Search..">
+				</div>
+				<a href="#">BOOKS</a>
+				<hr>
+				<a href="#">NEWS</a>
+				<hr>
+				<a href="#">STORE</a>
+			</div>
+			<span id="open" class="open" onclick="openNav()">&#9776</span>
 		</div>
-		<div class="first-nav">
-			<ul>
-				<li>BOOKS</li>
-				<li>NEWS</li>
-				<li>STORE</li>
-			</ul>
+		<div class="desktop-nav">
+			<div class="left">
+				<div class="nav-logo">
+					<img src="images/cozy-corner-logo.png" alt="cozy corner logo">
+				</div>
+				<div class="first-nav">
+					<a href="#">BOOKS</a>
+					<a href="#">NEWS</a>
+					<a href="#">STORE</a>
+				</div>
+			</div>
+			<div class="second-nav">
+				<a href="#"><i class="far fa-bell"></i></a>
+				<a href="#"><i class="far fa-user"></i></a>
+				<a href="#">JOIN</a>
+				<a href="#">LOGIN</a>
+			</div>
 		</div>
-		<div class="second-nav">
-			<ul>
-				<li>JOIN</li>
-				<li>LOGIN</li>
-			</ul>
-		</div>
-	</div>
+	</nav>
 	<div class="hero">
 
 	</div>
@@ -42,7 +72,6 @@
 	<footer>
 
 	</footer>
-
-	<h1>Preprocessing Starter File</h1>
+	<script src="js/main.js"></script>
 </body>
 </html>

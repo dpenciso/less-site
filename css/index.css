@@ -151,32 +151,104 @@ html {
   font-weight: 300;
   font-style: normal;
 }
-h1 {
+@media only screen and (min-width: 701px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+.mobile-nav .open {
+  display: block;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.75rem 0.8rem;
+}
+.mobile-nav .mobile-nav-div {
+  width: 0;
+  overflow-x: hidden;
+  z-index: 1;
+  position: fixed;
+  background-color: #f2f2f2;
+  display: block;
   font-family: proxima-nova, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-style: normal;
-  color: #c80000;
+  text-align: center;
 }
-.nav {
+.mobile-nav .mobile-nav-div .mobile-nav-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
 }
-.nav .nav-logo {
-  width: 200px;
+.mobile-nav .mobile-nav-div .mobile-nav-header .close {
+  font-size: 3rem;
+  padding: 0;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
 }
-.nav .nav-logo img {
+.mobile-nav .mobile-nav-div .mobile-nav-header .mobile-nav-logo {
+  width: 150px;
+  padding: 0;
+}
+.mobile-nav .mobile-nav-div .mobile-nav-header .mobile-nav-icons {
+  display: flex;
+  padding-right: 1rem;
+}
+.mobile-nav .mobile-nav-div .mobile-nav-header .mobile-nav-icons a {
+  padding: 0.25rem;
+}
+.mobile-nav .mobile-nav-div .nav-search {
   width: 100%;
 }
-.nav .first-nav ul {
+.mobile-nav .mobile-nav-div .nav-search select {
+  background-color: white;
+  height: 3rem;
+  border-radius: 0;
+}
+.mobile-nav .mobile-nav-div .nav-search input {
+  width: 80%;
+  height: 3rem;
+}
+.mobile-nav .mobile-nav-div a {
+  clear: left;
+  color: black;
+  font-size: 1rem;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+.mobile-nav .mobile-nav-div hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+@media only screen and (max-width: 700px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+.desktop-nav .left {
   display: flex;
 }
-.nav .first-nav ul li {
-  padding: 0 1rem;
+.desktop-nav .left .nav-logo {
+  width: 200px;
+  padding-right: 1rem;
 }
-.nav .second-nav ul {
-  display: flex;
+.desktop-nav .left .nav-logo img {
+  width: 100%;
 }
-.nav .second-nav ul li {
-  padding: 0 1rem;
+.desktop-nav .left .first-nav a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+.desktop-nav .second-nav a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
 }
