@@ -344,8 +344,29 @@ nav {
 }
 .hero .on-hero {
   position: absolute;
-  bottom: 23rem;
+  bottom: 15.5rem;
   left: 1rem;
+}
+@media only screen and (min-width: 500px) {
+  .hero .on-hero {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hero .on-hero {
+    position: absolute;
+    bottom: -5rem;
+    left: 1rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .hero .on-hero {
+    position: absolute;
+    bottom: 23rem;
+    left: 1rem;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .hero .on-hero {
