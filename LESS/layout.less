@@ -4,6 +4,7 @@ nav {
     width: 100%;
     top: 0;
     background-color: white;
+    z-index: 100;
 }
 
 .mobile-nav {
@@ -130,6 +131,9 @@ nav {
 .hero {
     .hero-img-desktop {
         width: 100%;
+        height: auto;
+        position: relative;
+        z-index: -1;
         @media only screen and (max-width: 750px) {
             display: none;
         }
@@ -146,4 +150,127 @@ nav {
             width: 100%;
         }
     }
+    .on-hero {
+        position: absolute;
+        bottom: 23rem;
+        left: 1rem;
+        @media only screen and (min-width: 1000px) {
+            position: absolute;
+            bottom: 13rem;
+            left: 1rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            position: absolute;
+            bottom: 6rem;
+            left: 1rem;
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.884);
+            margin-bottom: 1rem;
+            margin-left: .5rem;
+            color: white;
+            font-size: 2rem;
+            width: 50%;
+            padding: 1rem;
+            .bold;
+        }
+        .red-btn {
+            .red-button;
+            margin: 0 .5rem;
+        }
+        .gray-btn {
+            .gray-button;
+            margin: 0 .5rem;
+        }
+    }
+    
 }
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .book {
+        width: 33%;
+        :hover {
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .learn-btn {
+        .gray-button;
+        border: white;
+        margin: 2.5rem 0;
+    }
+}
+
+.news {
+    padding-bottom: 2rem;
+    h2 {
+        color: @dark-gray;
+        padding: 2rem 0rem 1rem 1rem;
+        font-size: 1.5rem;
+    }
+    background-color: @light-gray;
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .news-card {
+            width: 50%;
+            padding: 1rem;
+            :hover {
+                cursor: pointer;
+                color: @red;
+            }
+            figure {
+                img {
+                    width: 100%;
+                }
+            }
+            figcaption {
+                .bold;
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+        }
+    }
+    .news-btn {
+        .gray-button;
+        background-color: white;
+        border: white;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.connect {
+    background-color: @dark-gray;
+    padding: 1rem;
+    h2 {
+        color: @light-gray;
+        .bold;
+        font-size: 1.75rem;
+        padding-bottom: 1rem;
+    }
+    .connect-btns {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    .light;
+    font-size: .75rem;
+    padding: 1rem;
+    .line {
+        padding: 1rem;
+    }
+}
+

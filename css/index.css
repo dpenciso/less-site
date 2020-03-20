@@ -131,6 +131,47 @@ html {
 *:after {
   box-sizing: inherit;
 }
+.red-button {
+  background-color: #c80000;
+  color: white;
+  border: 1px #303030 solid;
+  font-size: 1.5rem;
+  width: 254px;
+  height: 70px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.gray-button {
+  background-color: #f2f2f2;
+  color: black;
+  border: 1px #303030 solid;
+  font-size: 1.5rem;
+  width: 254px;
+  height: 70px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.social-button {
+  background-color: #f2f2f2;
+  color: #303030;
+  border: 1px #303030 solid;
+  font-size: 2rem;
+  width: 180px;
+  height: 70px;
+}
+.subscribe-button {
+  background-color: #f2f2f2;
+  color: #303030;
+  border: 1px #303030 solid;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 50px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 .extra-bold {
   font-family: proxima-nova, sans-serif;
   font-weight: 800;
@@ -157,6 +198,7 @@ nav {
   width: 100%;
   top: 0;
   background-color: white;
+  z-index: 100;
 }
 @media only screen and (min-width: 751px) {
   .mobile-nav {
@@ -277,6 +319,9 @@ nav {
 }
 .hero .hero-img-desktop {
   width: 100%;
+  height: auto;
+  position: relative;
+  z-index: -1;
 }
 @media only screen and (max-width: 750px) {
   .hero .hero-img-desktop {
@@ -296,4 +341,163 @@ nav {
 }
 .hero .hero-img-mobile img {
   width: 100%;
+}
+.hero .on-hero {
+  position: absolute;
+  bottom: 23rem;
+  left: 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .hero .on-hero {
+    position: absolute;
+    bottom: 13rem;
+    left: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero .on-hero {
+    position: absolute;
+    bottom: 6rem;
+    left: 1rem;
+  }
+}
+.hero .on-hero .hero-text {
+  background-color: rgba(0, 0, 0, 0.884);
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+  padding: 1rem;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.hero .on-hero .red-btn {
+  background-color: #c80000;
+  color: white;
+  border: 1px #303030 solid;
+  font-size: 1.5rem;
+  width: 254px;
+  height: 70px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 0.5rem;
+}
+.hero .on-hero .gray-btn {
+  background-color: #f2f2f2;
+  color: black;
+  border: 1px #303030 solid;
+  font-size: 1.5rem;
+  width: 254px;
+  height: 70px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 0.5rem;
+}
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.books .book {
+  width: 33%;
+}
+.books .book :hover {
+  cursor: pointer;
+}
+.books .book img {
+  width: 100%;
+}
+.books .learn-btn {
+  background-color: #f2f2f2;
+  color: black;
+  border: 1px #303030 solid;
+  font-size: 1.5rem;
+  width: 254px;
+  height: 70px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border: white;
+  margin: 2.5rem 0;
+}
+.news {
+  padding-bottom: 2rem;
+  background-color: #f2f2f2;
+}
+.news h2 {
+  color: #303030;
+  padding: 2rem 0rem 1rem 1rem;
+  font-size: 1.5rem;
+}
+.news .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.news .cards .news-card {
+  width: 50%;
+  padding: 1rem;
+}
+.news .cards .news-card :hover {
+  cursor: pointer;
+  color: #c80000;
+}
+.news .cards .news-card figure img {
+  width: 100%;
+}
+.news .cards .news-card figcaption {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.news .news-btn {
+  background-color: #f2f2f2;
+  color: black;
+  border: 1px #303030 solid;
+  font-size: 1.5rem;
+  width: 254px;
+  height: 70px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: white;
+  border: white;
+  margin: 0 auto;
+  display: block;
+}
+.connect {
+  background-color: #303030;
+  padding: 1rem;
+}
+.connect h2 {
+  color: #f2f2f2;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+.connect .connect-btns {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+footer .line {
+  padding: 1rem;
 }
