@@ -200,9 +200,6 @@ nav {
   background-color: white;
   z-index: 100;
 }
-.mobile-nav {
-  z-index: 100;
-}
 @media only screen and (min-width: 751px) {
   .mobile-nav {
     display: none;
@@ -217,7 +214,7 @@ nav {
 .mobile-nav .mobile-nav-div {
   width: 0;
   overflow-x: hidden;
-  z-index: 1;
+  z-index: 100;
   position: fixed;
   background-color: #f2f2f2;
   display: block;
