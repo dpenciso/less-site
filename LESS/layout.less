@@ -21,7 +21,6 @@ nav {
     .mobile-nav-div {
         width: 0;
         overflow-x: hidden;
-        
         z-index: 100;
         position: fixed;
         background-color: @light-gray;
@@ -143,7 +142,7 @@ nav {
         width: 100%;
         height: auto;
         position: relative;
-        z-index: -1;
+        z-index: 0;
         @media only screen and (max-width: 750px) {
             display: none;
         }
@@ -164,6 +163,7 @@ nav {
         position: absolute;
         bottom: 15.5rem;
         left: 1rem;
+        z-index: 1;
         @media only screen and (min-width: 500px) {
             position: absolute;
             bottom: 5rem;
