@@ -141,6 +141,7 @@ html {
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: pointer;
 }
 .gray-button {
   background-color: #f2f2f2;
@@ -152,6 +153,7 @@ html {
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: pointer;
 }
 .social-button {
   background-color: #f2f2f2;
@@ -160,6 +162,7 @@ html {
   font-size: 2rem;
   width: 180px;
   height: 70px;
+  cursor: pointer;
 }
 .subscribe-button {
   background-color: #f2f2f2;
@@ -171,6 +174,7 @@ html {
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: pointer;
 }
 .extra-bold {
   font-family: proxima-nova, sans-serif;
@@ -410,6 +414,7 @@ nav {
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: pointer;
   margin: 0 0.5rem;
 }
 .hero .on-hero .gray-btn {
@@ -422,6 +427,7 @@ nav {
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: pointer;
   margin: 0 0.5rem;
 }
 .books {
@@ -453,6 +459,7 @@ nav {
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: pointer;
   border: white;
   margin: 2.5rem 0;
 }
@@ -493,6 +500,27 @@ nav {
   font-size: 1.5rem;
   padding: 1rem 0;
 }
+.news .cards .book-card {
+  width: 33%;
+  padding: 1rem;
+}
+@media only screen and (max-width: 750px) {
+  .news .cards .book-card {
+    width: 100%;
+  }
+}
+.news .cards .book-card :hover {
+  cursor: pointer;
+  color: #c80000;
+}
+.news .cards .book-card figure img {
+  width: 100%;
+}
+.news .cards .book-card figcaption {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #303030;
+}
 .news .news-btn {
   background-color: #f2f2f2;
   color: black;
@@ -503,6 +531,7 @@ nav {
   font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: pointer;
   background-color: white;
   border: white;
   margin: 0 auto;

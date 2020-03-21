@@ -265,7 +265,29 @@ nav {
                 padding: 1rem 0;
             }
         }
+        .book-card {
+            @media only screen and (max-width: 750px) {
+                width: 100%;
+            }
+            width: 33%;
+            padding: 1rem;
+            :hover {
+                cursor: pointer;
+                color: @red;
+            }
+            figure {
+                img {
+                    width: 100%;
+                }
+            }
+            figcaption {
+                font-size: 1.5rem;
+                padding: 1rem 0;
+                color: @dark-gray;
+            }
+        }
     }
+   
     .news-btn {
         .gray-button;
         background-color: white;
